@@ -1,4 +1,4 @@
-package Examen_Final_Estructura_Datos_Java.src.main.java.examen_final;
+package examen_final;
 
 public class Cola {
     ListaA lista = new ListaA();
