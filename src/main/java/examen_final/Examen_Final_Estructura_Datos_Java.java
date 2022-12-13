@@ -9,12 +9,12 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author dagove47
+ * @author David Gomez, Gabriel Brilla, Gerald Blanco, Alexander Torres
  */
 public class Examen_Final_Estructura_Datos_Java {
 
     public static void main(String[] args) {
-        //        Cola cola = new Cola();
+        ListaCircular listaCircular = new ListaCircular();
         int loop = 0;
         while(loop == 0) {
             int mainMenu = Integer.parseInt(JOptionPane.showInputDialog(
@@ -40,7 +40,16 @@ public class Examen_Final_Estructura_Datos_Java {
                     
                     break;
                 case 5:
-                    
+                    int largo = Integer.parseInt(JOptionPane.showInputDialog(
+                            "Digite largo de la maleta:"));
+                    int ancho = Integer.parseInt(JOptionPane.showInputDialog(
+                            "Digite el ancho de la maleta:"));
+                    int fondo = Integer.parseInt(JOptionPane.showInputDialog(
+                            "Digite el fondo de la maleta:"));
+                    int peso = Integer.parseInt(JOptionPane.showInputDialog(
+                            "Digite el peso de la maleta:"));
+                    listaCircular.insertar(new Maleta(largo, ancho, fondo, peso));
+                    JOptionPane.showMessageDialog(null, "Valor Incorrecto\n" + listaCircular);
                     break;
                 case 6:
                     
