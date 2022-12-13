@@ -22,15 +22,9 @@ public class ListaCircular {
             ultimo.setNext(new Nodo2(p));
             ultimo = ultimo.getNext();
         } else {
-            Nodo2 aux = cabeza;
-            while (aux.getNext() != null) {
-                aux = aux.getNext();
-            }
-            Nodo2 temp = new Nodo2(p);
-            temp.setNext(aux.getNext());
-            temp.setBack(aux);
-            aux.setNext(temp);
-            temp.getNext().setBack(temp); //nuevo
+            Nodo2 aux = new Nodo2(p);
+            aux.setNext(cabeza);
+            cabeza=aux;
         }
         ultimo.setNext(cabeza);
         cabeza.setBack(ultimo);
