@@ -6,8 +6,6 @@ public class ListaA {
     public void inserta(Cliente p){
         if(cabeza==null){
             cabeza = new Nodo(p);
-        }else if(cabeza.getNext()==null){
-            cabeza.setNext(new Nodo(p));
         }else{
             Nodo aux = cabeza;
             while (aux.getNext() != null ){
