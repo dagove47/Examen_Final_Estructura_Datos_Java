@@ -49,10 +49,10 @@ public class Examen_Final_Estructura_Datos_Java {
                     int peso = Integer.parseInt(JOptionPane.showInputDialog(
                             "Digite el peso de la maleta:"));
                     listaCircular.insertar(new Maleta(largo, ancho, fondo, peso));
-                    JOptionPane.showMessageDialog(null, "Valor Incorrecto\n" + listaCircular);
+                    JOptionPane.showMessageDialog(null, "Maleta agregada a la lista con exito!");
                     break;
                 case 6:
-                    
+                    JOptionPane.showMessageDialog(null, "Lista de Maletas: \n" + listaCircular);
                     break;
                 case 7:
                     loop = 1;
