@@ -19,14 +19,14 @@ public class Examen_Final_Estructura_Datos_Java {
         while(loop == 0) {
             int mainMenu = Integer.parseInt(JOptionPane.showInputDialog(
                 "Digite el numero de la accion que desea realizar:\n\n" +
-                "0- Salir \n" +
-                "1- S \n" +
-                "2- B \n" +
-                "3- V \n\n"));
+                "1- Comprar boletos \n" +
+                "2- Observar la cola \n" +
+                "3- Extraer el primero en la cola \n" +
+                "4- Mostrar lista de finalizados \n" +
+                "5- Ingresar maletas \n" +
+                "6- Observar la lista de las maletas \n" +
+                "7- Salir \n\n"));
             switch(mainMenu) {
-                case 0:
-                    
-                    break;
                 case 1:
                     
                     break;
@@ -34,6 +34,15 @@ public class Examen_Final_Estructura_Datos_Java {
                     
                     break;
                 case 3:
+                    
+                    break;
+                case 4:
+                    
+                    break;
+                case 5:
+                    
+                    break;
+                case 6:
                     
                     break;
                 case 7:
